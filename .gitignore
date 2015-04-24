@@ -15,3 +15,11 @@
 /log/*
 !/log/.keep
 /tmp
+
+# To prevent conflicts between Spring and Git when using Guard, i
+# you should add the spring/ directory to the .gitignore file used 
+# by Git to determine what to ignore when adding files or 
+# directories to the repository.
+/spring/*.pid
+
+
