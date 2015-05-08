@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>CD40C3C2-F9FD-49B8-ABD4-3555DE1F50B6</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>CD40C3C2-F9FD-49B8-ABD4-3555DE1F50B6</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va5QDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAkAIAAAUAAAABAQAAVXNlcnMA
+				AAAEAAAAAQEAAG1hcmsKAAAAAQEAAFJ1YnlfVGVzdHMA
+				AAkAAAABAQAAd29ya3NwYWNlAAAACgAAAAEBAABzYW1w
+				bGVfYXBwAAAUAAAAAQYAAAQAAAAUAAAAIAAAADQAAABI
+				AAAACAAAAAQDAABtAAAAAAAAAAgAAAAEAwAA8L4SAAAA
+				AAAIAAAABAMAAJnCJQAAAAAACAAAAAQDAABlxycAAAAA
+				AAgAAAAEAwAAAzYwAAAAAAAUAAAAAQYAAHgAAACIAAAA
+				mAAAAKgAAAC4AAAACAAAAAAEAABBuumnnAAAABgAAAAB
+				AgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAABAAAAAMD
+				AAADAAAABAAAAAMDAAD2AQAACAAAAAEJAABmaWxlOi8v
+				LwUAAAABAQAATWFjSEQAAAAIAAAABAMAAACAgTV0AAAA
+				CAAAAAAEAABButdrNAAAACQAAAABAQAANDUyMjFENzkt
+				RjRCQy0zRDYzLTlCQTItMUNBNDUxQjdGNjlGGAAAAAEC
+				AACBAAAAAQAIAO8XAAABAAgAAAAAAAAAAAABAAAAAQEA
+				AC8AAAAAAAAAAQUAALwAAAABAgAAZjBiZjQ5NmE2MGI4
+				MmE4M2E0Zjg3MTIyZWJiNTE1OGM4ZDEyOWU2YTswMDAw
+				MDAwMDswMDAwMDAwMDswMDAwMDAwMDAwMDAwMDIwO2Nv
+				bS5hcHBsZS5hcHAtc2FuZGJveC5yZWFkLXdyaXRlOzAw
+				MDAwMDAxOzAxMDAwMDAyOzAwMDAwMDAwMDAzMDM2MDM7
+				L3VzZXJzL21hcmsvcnVieV90ZXN0cy93b3Jrc3BhY2Uv
+				c2FtcGxlX2FwcADMAAAA/v///wEAAAAAAAAAEAAAAAQQ
+				AABcAAAAAAAAAAUQAADIAAAAAAAAABAQAAD0AAAAAAAA
+				AEAQAADkAAAAAAAAAAIgAAC4AQAAAAAAAAUgAAAsAQAA
+				AAAAABAgAAA8AQAAAAAAABEgAABsAQAAAAAAABIgAABM
+				AQAAAAAAABMgAABcAQAAAAAAACAgAACYAQAAAAAAADAg
+				AADEAQAAAAAAAAHAAAAUAQAAAAAAABHAAAAUAAAAAAAA
+				ABLAAAAgAQAAAAAAAIDwAADMAQAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/mark/Ruby_Tests/workspace/sample_app/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>sample_app</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>

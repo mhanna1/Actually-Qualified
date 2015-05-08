@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:mark</key>
+	<false/>
+	<key>ExpandedEditorWidth:mark:displays([(0, 0), (1280, 800)])</key>
+	<integer>738</integer>
+	<key>ExpandedItems:mark</key>
+	<array>
+		<string>CD40C3C2-F9FD-49B8-ABD4-3555DE1F50B6</string>
+		<dict>
+			<key>BookmarkData</key>
+			<data>
+			Ym9va7wDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAuAIAAAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAG1h
+			cmsKAAAAAQEAAFJ1YnlfVGVzdHMAAAkAAAABAQAAd29ya3NwYWNl
+			AAAACgAAAAEBAABzYW1wbGVfYXBwAAADAAAAAQEAAGFwcAAYAAAA
+			AQYAAAQAAAAUAAAAIAAAADQAAABIAAAAXAAAAAgAAAAEAwAAbQAA
+			AAAAAAAIAAAABAMAAPC+EgAAAAAACAAAAAQDAACZwiUAAAAAAAgA
+			AAAEAwAAZccnAAAAAAAIAAAABAMAAAM2MAAAAAAACAAAAAQDAAAJ
+			NjAAAAAAABgAAAABBgAAiAAAAJgAAACoAAAAuAAAAMgAAADYAAAA
+			CAAAAAAEAABBuumnnAAAABgAAAABAgAAAgAAAAAAAAAPAAAAAAAA
+			AAAAAAAAAAAABAAAAAMDAAAEAAAABAAAAAMDAAD2AQAACAAAAAEJ
+			AABmaWxlOi8vLwUAAAABAQAATWFjSEQAAAAIAAAABAMAAACAgTV0
+			AAAACAAAAAAEAABButdrNAAAACQAAAABAQAANDUyMjFENzktRjRC
+			Qy0zRDYzLTlCQTItMUNBNDUxQjdGNjlGGAAAAAECAACBAAAAAQAI
+			AO8XAAABAAgAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMAA
+			AAABAgAAZDI1MzJiNzgxNzc1ZDM1YzkyMjc4OGNkM2UwMzQ5NGU4
+			ZDVmYjIzNDswMDAwMDAwMDswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+			MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5yZWFkLXdyaXRlOzAw
+			MDAwMDAxOzAxMDAwMDAyOzAwMDAwMDAwMDAzMDM2MDk7L3VzZXJz
+			L21hcmsvcnVieV90ZXN0cy93b3Jrc3BhY2Uvc2FtcGxlX2FwcC9h
+			cHAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAAaAAAAAAAAAAFEAAA
+			6AAAAAAAAAAQEAAAGAEAAAAAAABAEAAACAEAAAAAAAACIAAA3AEA
+			AAAAAAAFIAAAUAEAAAAAAAAQIAAAYAEAAAAAAAARIAAAkAEAAAAA
+			AAASIAAAcAEAAAAAAAATIAAAgAEAAAAAAAAgIAAAvAEAAAAAAAAw
+			IAAA6AEAAAAAAAABwAAAOAEAAAAAAAARwAAAFAAAAAAAAAASwAAA
+			RAEAAAAAAACA8AAA8AEAAAAAAAA=
+			</data>
+			<key>FileURL</key>
+			<string>file:///Users/mark/Ruby_Tests/workspace/sample_app/app/</string>
+			<key>TypeID</key>
+			<string>_CFileLocator</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>FileFilterMode:mark</key>
+	<integer>0</integer>
+	<key>OpenDocuments:mark</key>
+	<array/>
+	<key>OpenDocumentsExpanded</key>
+	<true/>
+	<key>OpenDocumentsSplitterProportion</key>
+	<real>0.69943022727966309</real>
+	<key>ProjectViewVisible</key>
+	<true/>
+	<key>RecentItems:mark</key>
+	<array/>
+	<key>ScratchpadItemsExpanded</key>
+	<true/>
+	<key>ScratchpadItemsVisible</key>
+	<true/>
+	<key>ShowSCMData:mark</key>
+	<false/>
+	<key>ToolbarVisible:mark</key>
+	<true/>
+	<key>ViewSplitterPosition:mark</key>
+	<real>0.29942965507507324</real>
+	<key>WindowFrame:mark:displays([(0, 0), (1280, 800)])</key>
+	<string>rect(45,22,747,1074)</string>
+</dict>
+</plist>
