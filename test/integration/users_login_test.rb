@@ -8,24 +8,34 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     @user = users(:michael)
   end
 
-# The basic steps appear as follows:
-# 
+
   test "login with invalid information" do
-# Visit the login path.
     get login_path
-# Verify that the new sessions form renders properly.
     assert_template 'sessions/new'
-# Verify that the flash message doesn’t appear on the new page.
     post login_path, session: { email: "", password: "" }
-# Post to the sessions path with an invalid params hash.
     assert_template 'sessions/new'
-# Verify that the new sessions form gets re-rendered and that a flash message appears.
     assert_not flash.empty?
-# Visit another page (such as the Home page).
     get root_path
-# Verify that the flash message doesn’t appear on the new page.
     assert flash.empty?
   end
+  
+# The basic steps appear as follows:
+#   test "" do
+# Visit the login path.
+#    get login_path
+# Verify that the new sessions form renders properly.
+#    assert_template 'sessions/new'
+# Verify that the flash message doesn’t appear on the new page.
+#    post login_path, session: { email: "", password: "" }
+# Post to the sessions path with an invalid params hash.
+#    assert_template 'sessions/new'
+# Verify that the new sessions form gets re-rendered and that a flash message appears.
+#    assert_not flash.empty?
+# Visit another page (such as the Home page).
+#    get root_path
+# Verify that the flash message doesn’t appear on the new page.
+#    assert flash.empty?
+#  end
 
 
   test "login with valid information" do
