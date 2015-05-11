@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',        '4.2.0'
 gem 'mysql2',       '0.3.18'
 gem 'aws-sdk',      '~> 2'
+gem 'puma',        '2.11.1'
 gem 'bcrypt',       '3.1.10'
 gem 'faker',        '1.4.2'
 gem 'rspec',	    '>= 3.0'
@@ -32,6 +33,5 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '2.11.1'
 end
 
