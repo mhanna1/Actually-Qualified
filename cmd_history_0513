@@ -1,0 +1,124 @@
+
+on AWS  instal rbenvs
+
+Followed instructions ar 
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04
+
+cd .rbenv/
+  381  ll
+  382  cd plugins/
+  383  ll
+  384  git clone https://github.com/sstephenson/rbenv-vars.git
+  385  ll
+  386  pwd
+  387  cd ../../Ruby_Tests/workspace/sample_app/
+  388  ll
+  389  llt
+  390  ls -lsa
+  391  vi .rbenv-vars
+  392  rbenv vars
+  393  pwd
+  394  vi .rbenv-vars
+  395  rbenv vars
+  396  cat /home/ubuntu/Ruby_Tests/workspace/sample_app/.rbenv-vars
+  397  puma status
+  398  cat Gemfile.lock | grep rack
+  399  cat Gemfile | grep rack
+  400  grep -c processor /proc/cpuinfo
+  401  mkdir -p shared/pids shared/sockets shared/log
+  402  cd ~
+  403  wget https://raw.githubusercontent.com/puma/puma/master/tools/jungle/upstart/puma-manager.conf
+  404  wget https://raw.githubusercontent.com/puma/puma/master/tools/jungle/upstart/puma.conf
+  405  cd ~
+  406  ll
+  407  vi puma.conf
+  408  sudo cp puma.conf puma-manager.conf /etc/init
+  409  sudo vi /etc/puma.conf
+  410  pwd
+  411  cd ./Ruby_Tests/workspace/sample_app/
+  412  pwd
+  413  sudo vi /etc/puma.conf
+  414  sudo start puma-manager
+  415  sudo stop puma-manager
+
+
+
+       sudo apt-get install nginx
+  418  sudo vi /etc/nginx/sites-available/default
+  419  pwd
+  420  sudo vi /etc/nginx/sites-available/default
+
+  418  sudo vi /etc/nginx/sites-available/default
+  419  pwd
+  420  sudo vi /etc/nginx/sites-available/default
+  421  history
+  422  sudo service nginx restart
+  423  sudo start puma-manager
+  424  sudo service nginx restart
+  425  sudo vi /etc/nginx/sites-available/default
+  426  sudo service nginx restart
+  427  sudo service nginx stop
+  428  sudo stop puma-manager
+  429  sudo start puma-manager
+  430  sudo service nginx stop
+  431  sudo service nginx start
+  432  sudo vi /etc/nginx/sites-available/default
+  433  ll /home/ubuntu/sample_app/shared/sockets/puma.sock
+  434  sudo ll /home/ubuntu/sample_app/shared/sockets/puma.sock
+  435  sudo vi /etc/nginx/sites-available/default
+  436  sudo service nginx stop
+  437  sudo service nginx start
+  438  sudo vi /etc/nginx/sites-available/default
+  439  sudo service nginx stop
+  440  sudo stop puma-manager
+  441  sudo start puma-manager app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  442  sudo service nginx start
+  443  sudo service nginx stop
+  444  sudo stop puma-manager app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  445  sudo service nginx start
+  446  sudo service nginx stop
+  447  sudo vi /etc/nginx/sites-available/default
+  448  sudo vi /etc/puma.conf
+  449  ll /home/ubuntu/Ruby_Tests/workspace/sample_app
+  450  sudo stop puma-manager app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  451  sudo start puma app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  452  sudo service nginx stop
+  453  sudo service nginx start
+  454  vi vi config/puma.rb
+  455  vi vi ~/config/puma.rb
+  456  vi  ~/config/puma.rb
+  457  pwd
+  458  ll
+  459  cd ./config/
+  460  ll
+  461  vi puma.rb
+  462  cd ../
+  463  ll
+  464  sudo service nginx stop
+  465  vi ./config/puma.rb
+  466  sudo stop puma app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  467  sudo start puma app=/home/ubuntu/Ruby_Tests/workspace/sample_app
+  468  sudo service nginx start
+  469  sudo service nginx stop
+  470  rails server
+  471  vi Gemfile
+  472  bundle install
+  473  bundle install rake test
+  474  bundle exec rake test
+  475  rails server
+  476  rails server -e development
+  477  rails server -e test
+  478  rails server -e production
+  479  set | grep RAILS
+  480  vi ./config/puma.rb
+  481  rails server -e development
+  482  rails server
+  483  rails server -e test
+  484  rails server -e production
+  485  vi Gemfile
+  486  cp ./config/environments/production.rb  /config/environments/production.rb-pre20050513
+  487  cp ./config/environments/production.rb  ./config/environments/production.rb-pre20050513
+  488  cp ./config/environments/development.rb  ./config/environments/production.rb
+
+
+
