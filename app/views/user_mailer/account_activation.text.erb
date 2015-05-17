@@ -1,6 +1,18 @@
-Hi <%= @user.name %>,
+Hi <%= @user.name %>,<BR>
 
-Welcome to the Sample App! Click on the link below to activate your account:
+<p>
+
+  My name is Mark Hanna.
+  I set up this web site to demonstrate my proficiency with a range of technologies.
+  I hosted this site in the cloud.
+  It is written with Ruby on Rails and hosted in the cloud with AWS.
+  The Amazon Web Services (sub).Domain Name is <%= Figaro.env.domain_name %>  <br>
+
+  This procedure demonstates a site having online authorization and authentication capabilites. <br><br>
+  Pleae click on the link below to activate your account: <br>
+
+</p>
+<br>
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
 
