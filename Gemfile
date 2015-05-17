@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.2.0'
+gem 'figaro'
 gem 'json', '1.8.2'
 gem 'mysql2', '0.3.18'
 gem 'aws-sdk', '~> 2'
