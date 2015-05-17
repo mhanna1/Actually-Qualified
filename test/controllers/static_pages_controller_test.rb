@@ -1,4 +1,5 @@
-require 'test_helper'
+require File.join(File.dirname(__FILE__), '..', 'test_helper.rb')
+
 
 class StaticPagesControllerTest < ActionController::TestCase
   test "should get home" do

@@ -1,4 +1,5 @@
-require 'test_helper'
+require File.join(File.dirname(__FILE__), '..', 'test_helper.rb')
+
 #  marks idea to add this     require 'sessions_helper'
 
 class UsersControllerTest < ActionController::TestCase
