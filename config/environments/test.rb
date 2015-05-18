@@ -14,11 +14,11 @@ Rails.application.configure do
   config.eager_load = false
 
   # Configure static file server for tests with Cache-Control for performance.
-  config.serve_static_files   = true
+  config.serve_static_files = true
   config.static_cache_control = 'public, max-age=3600'
 
   # Show full error reports and disable caching.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local = true
   config.action_controller.perform_caching = false
 
   # Raise exceptions instead of rendering exception templates.
@@ -31,7 +31,23 @@ Rails.application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = { host: 'example.com' }
+  config.action_mailer.default_url_options = {host: 'example.com'}
+
+
+  host = 'localhost:3000'
+
+  if Rails.env.development?
+    host = 'localhost:3000'
+  end
+
+  if Rails.env.test?
+    host = 'localhost:3000'
+  end
+
+  if Rails.env.production?
+    host = Figaro.env.AWS_domain_name
+  end
+
 
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
