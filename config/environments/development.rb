@@ -10,24 +10,38 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports and disable caching.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local = true
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true 
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'localhost:3000'
-  config.action_mailer.default_url_options = { host: host }
+
+
+  if Rails.env.development?
+    host = request.host || Figaro.env.AWS_domain_name
+  end
+
+  if Rails.env.test?
+    host = request.host || Figaro.env.AWS_domain_name
+  end
+
+  if Rails.env.production?
+    host = request.host || Figaro.env.AWS_domain_name
+  end
+
+
+  config.action_mailer.default_url_options = {host: host}
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:              'smtp.gmail.com',
-      port:                 587,
-      domain:               Figaro.env.gmail_domain,
-      user_name:            Figaro.env.gmail_username,
-      password:             Figaro.env.gmail_password,
-      authentication:       'plain',
-      enable_starttls_auto: true  }
+      address: 'smtp.gmail.com',
+      port: 587,
+      domain: Figaro.env.gmail_domain,
+      user_name: Figaro.env.gmail_username,
+      password: Figaro.env.gmail_password,
+      authentication: 'plain',
+      enable_starttls_auto: true}
 
 
   # Print deprecation notices to the Rails logger.
