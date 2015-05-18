@@ -19,7 +19,7 @@ Rails.application.configure do
 
   # host = 'localhost:3000'
   host = Figaro.env.AWS_domain_name
-  
+
   if Rails.env.development?
    # host = 'localhost:3000'
     host = Figaro.env.AWS_domain_name
