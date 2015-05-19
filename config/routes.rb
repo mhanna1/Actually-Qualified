@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
   root 'static_pages#home'
+  get    'resume'  => 'static_pages#resume'
   get    'help'    => 'static_pages#help'
   get    'about'   => 'static_pages#about'
   get    'contact' => 'static_pages#contact'
