@@ -3,6 +3,15 @@
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
     <script type="text/javascript">
+    var Tscroll_path_to_files = '/images/'
+
+    // please, don't change anything below this line
+    function Tscroll_init (id) {
+    document.write ('<iframe id="Tscr' + id + '" scrolling=no frameborder=no src="' + Tscroll_path_to_files + 'scroll.html?' + id + '" width="1" height="1"></iframe>');
+    }
+    </script>
+
+    <script type="text/javascript">
         function popUp(URL, height, width, isScroll) {
             day = new Date();
             id = day.getTime();
@@ -58,6 +67,8 @@
         }
 
     </script>
+    <SCRIPT LANGUAGE="JavaScript">Tscroll_init (0)</SCRIPT>
+
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
