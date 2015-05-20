@@ -5,11 +5,12 @@
   <div class="container">
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
+    <div id="clockbox" style="color:#Fe00FF;> </div>
 
     <nav>
       <ul class="nav navbar-nav navbar-right">
 
-        <li><div id="clockbox" style="color:#Fe00FF;> </div> </li>
+
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
