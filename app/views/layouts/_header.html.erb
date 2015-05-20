@@ -1,7 +1,6 @@
 
 <header class="navbar navbar-fixed-top navbar-inverse">
 
-  <span id="clockbox" style="color:#Fe00FF;> </span>
 
   <div class="container">
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
@@ -10,6 +9,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
 
+        <li><span id="clockbox" style="color:#Fe00FF;> </span> </li>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
