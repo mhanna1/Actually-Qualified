@@ -24,11 +24,11 @@ window.onload=function(){
         GetClock();
         setInterval(GetClock,1000);
     }
-    </script>
 
 
-    <script type="text/javascript" language="JavaScript">
-    function pgClock() {
+
+
+function pgClock() {
         var sTime=(new Date()).toString();
         document.getElementById('clockid2').innerHTML =
             sTime.substring(0,3+sTime.lastIndexOf(':'));
@@ -37,3 +37,4 @@ window.onload=function(){
     pgClock();
 
 </script>
+
