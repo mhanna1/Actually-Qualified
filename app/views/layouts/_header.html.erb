@@ -3,71 +3,34 @@
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
     <script type="text/javascript">
-    var Tscroll_path_to_files = '/images/'
+        tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+        tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
-    // please, don't change anything below this line
-    function Tscroll_init (id) {
-    document.write ('<iframe id="Tscr' + id + '" scrolling=no frameborder=no src="' + Tscroll_path_to_files + 'scroll.html?' + id + '" width="1" height="1"></iframe>');
-    }
-    </script>
+        function GetClock(){
+            var d=new Date();
+            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+            if(nyear<1000) nyear+=1900;
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
 
-    <script type="text/javascript">
-        function popUp(URL, height, width, isScroll) {
-            day = new Date();
-            id = day.getTime();
-            eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=" + isScroll + ",location=0,statusbar=0,menubar=0,resizable=0,width=" + width + ",height=" + height + ",left = 100,top = 100');");
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+        }
+
+        window.onload=function(){
+            GetClock();
+            setInterval(GetClock,1000);
         }
     </script>
 
-    <script>
-
-        var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
-        var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
-
-        function getthedate() {
-            var mydate = new Date()
-            var year = mydate.getYear()
-            if (year < 1000)
-                year += 1900
-            var day = mydate.getDay()
-            var month = mydate.getMonth()
-            var daym = mydate.getDate()
-            if (daym < 10)
-                daym = "0" + daym
-            var hours = mydate.getHours()
-            var minutes = mydate.getMinutes()
-            var seconds = mydate.getSeconds()
-            var dn = "AM"
-            if (hours >= 12)
-                dn = "PM"
-            if (hours > 12) {
-                hours = hours - 12
-            }
-            if (hours == 0)
-                hours = 12
-            if (minutes <= 9)
-                minutes = "0" + minutes
-            if (seconds <= 9)
-                seconds = "0" + seconds
-//change font size here
-            var cdate = "<span style=\"font-size: 15px; font-family: Verdana; color:#FDFDFD; font-weight: bold\">" + dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + " " + hours + ":" + minutes + ":" + seconds + " " + dn
-                    + "</span>"
-            if (document.all)
-                document.all.clock.innerHTML = cdate
-            else if (document.getElementById)
-                document.getElementById("clock").innerHTML = cdate
-            else
-                document.write(cdate)
-        }
-        if (!document.all && !document.getElementById)
-            getthedate()
-        function goforit() {
-            if (document.all || document.getElementById)
-                setInterval("getthedate()", 2000)
-        }
-
-    </script>
-    <SCRIPT LANGUAGE="JavaScript">Tscroll_init (0)</SCRIPT>
+    <div id="clockbox"></div>
 
     <nav>
       <ul class="nav navbar-nav navbar-right">
