@@ -36,5 +36,10 @@ function pgClock() {
     }
     pgClock();
 
+window.onload=function(){
+        pgClock();
+    }
+
+
 </script>
 
