@@ -25,3 +25,15 @@ window.onload=function(){
         setInterval(GetClock,1000);
     }
     </script>
+
+
+    <script type="text/javascript" language="JavaScript">
+    function pgClock() {
+        var sTime=(new Date()).toString();
+        document.getElementById('clockid2').innerHTML =
+            sTime.substring(0,3+sTime.lastIndexOf(':'));
+        setTimeout('pgClock()',333);
+    }
+    pgClock();
+
+</script>
