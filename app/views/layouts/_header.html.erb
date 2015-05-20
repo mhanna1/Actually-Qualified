@@ -1,25 +1,82 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
+
+    <script type="text/javascript">
+        function popUp(URL, height, width, isScroll) {
+            day = new Date();
+            id = day.getTime();
+            eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=" + isScroll + ",location=0,statusbar=0,menubar=0,resizable=0,width=" + width + ",height=" + height + ",left = 100,top = 100');");
+        }
+    </script>
+
+    <script>
+
+        var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+        var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+        function getthedate() {
+            var mydate = new Date()
+            var year = mydate.getYear()
+            if (year < 1000)
+                year += 1900
+            var day = mydate.getDay()
+            var month = mydate.getMonth()
+            var daym = mydate.getDate()
+            if (daym < 10)
+                daym = "0" + daym
+            var hours = mydate.getHours()
+            var minutes = mydate.getMinutes()
+            var seconds = mydate.getSeconds()
+            var dn = "AM"
+            if (hours >= 12)
+                dn = "PM"
+            if (hours > 12) {
+                hours = hours - 12
+            }
+            if (hours == 0)
+                hours = 12
+            if (minutes <= 9)
+                minutes = "0" + minutes
+            if (seconds <= 9)
+                seconds = "0" + seconds
+//change font size here
+            var cdate = "<span style=\"font-size: 15px; font-family: Verdana; color:#FDFDFD; font-weight: bold\">" + dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + " " + hours + ":" + minutes + ":" + seconds + " " + dn
+                    + "</span>"
+            if (document.all)
+                document.all.clock.innerHTML = cdate
+            else if (document.getElementById)
+                document.getElementById("clock").innerHTML = cdate
+            else
+                document.write(cdate)
+        }
+        if (!document.all && !document.getElementById)
+            getthedate()
+        function goforit() {
+            if (document.all || document.getElementById)
+                setInterval("getthedate()", 2000)
+        }
+
+    </script>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path %></li>
-        <li><%= link_to "Help",   help_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to "Resume", resume_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Password Reset", edit_user_path(current_user) %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
-              </li>
-            </ul>
-          </li>
+            <li><%= link_to "Resume", resume_path %></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Password Reset", edit_user_path(current_user) %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Log out", logout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+            <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
     </nav>
