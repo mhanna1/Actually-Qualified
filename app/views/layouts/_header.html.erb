@@ -3,10 +3,25 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 
 
-  <div class="container">
+  <script type="text/javascript">
+
+  function pgClock() {
+  var sTime=(new Date()).toString();
+  document.getElementById('clockid2').innerHTML =
+  sTime.substring(0,3+sTime.lastIndexOf(':'));
+  setTimeout('pgClock()',333);
+  }
+  pgClock();
+
+  window.onload=function(){
+  pgClock();
+  }
+</script>
+
+  < class="container">
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
-
+    <div id="class2"></div>
     <nav>
       <ul class="nav navbar-nav navbar-right">
 
