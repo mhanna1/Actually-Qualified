@@ -19,12 +19,12 @@
 
   < class="container" >
 
-    <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %><timeclock><div id="clockid2"></div></timeclock>
+    <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
     <nav>
       <ul class="nav navbar-nav navbar-right">
 
-
+        <li><timeclock><div id="clockid2"></div></timeclock></li>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <% if logged_in? %>
