@@ -1,18 +1,26 @@
 
 <header class="navbar navbar-fixed-top navbar-inverse">
 
-
   <script type="text/javascript">
 
-  window.onload=function(){
-  pgClock();
-  
+      function pgClock() {
+          var sTime=(new Date()).toString();
+          document.getElementById('clockid2').innerHTML =
+                  sTime.substring(0,3+sTime.lastIndexOf(':'));
+          setTimeout('pgClock()',333);
+      }
+
+      window.onload=function(){
+        pgClock();
+      }
+
   </script>
 
 
   < class="container" >
 
-  <center><timeclock><div id="clockid2"></div></timeclock></center>
+  <center><timeclock>Time is ticking ...
+    <div id="clockid2"></div> ... I'm the right choice?</timeclock></center>
 
     <%= link_to "Ruby on Rails ... Mark Hanna", root_path, id: "logo" %>
 
