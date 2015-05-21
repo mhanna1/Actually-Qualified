@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get    'resume'  => 'static_pages#resume'
   get    'mission' => 'static_pages#mission'
+  get    'aws'     => 'static_pages#aws'
   get    'about'   => 'static_pages#about'
   get    'contact' => 'static_pages#contact'
   get    'signup'  => 'users#new'

@@ -14,6 +14,13 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Employer Introduction Site - Mission"
   end
 
+
+  test "should get aws" do
+    get :aws
+    assert_response :success
+    assert_select "title", "Employer Introduction Site - AWS"
+  end
+
   test "should get resume" do
     get :resume
     assert_response :success
