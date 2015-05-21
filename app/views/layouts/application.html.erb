@@ -11,7 +11,7 @@
   <style type="text/css" id="custom-background-css">
       body.custom-background { background-color: #9FAFEE; }
   </style>
-  <body>
+  <body :id custom-background-css>
     <%= render 'layouts/header' %>
     <div class="container" style="background:#9FAFEE !important">
       <% flash.each do |message_type, message| %>
