@@ -8,10 +8,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Employer Introduction Site - Home"
   end
 
-  test "should get help" do
-    get :help
+  test "should get mission" do
+    get :mission
     assert_response :success
-    assert_select "title", "Employer Introduction Site - Help"
+    assert_select "title", "Employer Introduction Site - Mission"
   end
 
   test "should get resume" do
