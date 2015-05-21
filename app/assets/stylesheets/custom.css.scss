@@ -9,6 +9,15 @@ $purplish: #FD34F6;
 $bluegrey: #9395C7;
 $body-bg: #9FAFEE;
 
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+}
+
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
