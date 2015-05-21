@@ -102,6 +102,17 @@ timeclock {
 }
 
 
+#pagelink {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.0em;
+  color: $bluegrey;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+
 #logo:hover {
   color: #fff;
   text-decoration: none;
