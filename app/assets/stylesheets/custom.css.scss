@@ -102,6 +102,13 @@ timeclock {
 }
 
 
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
 #pagelink {
   float: left;
   margin-right: 10px;
@@ -113,10 +120,11 @@ timeclock {
 }
 
 
-#logo:hover {
+#pagelink:hover {
   color: #fff;
   text-decoration: none;
 }
+
 
 
 
