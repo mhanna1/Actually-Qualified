@@ -88,9 +88,22 @@ p {
   font-weight: bold;
 }
 
+
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+
+#timeclock {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.0em;
+  color: $bluegrey;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
 }
 
 
