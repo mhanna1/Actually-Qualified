@@ -9,7 +9,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", mission_path
     assert_select "a[href=?]", aws_path
 #   assert_select "a[href=?]", resume_path
-    assert_select "a[href=?]", about_path
+#   assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
 #   get signup_path
 #   assert_select "title", full_title("Sign up")
