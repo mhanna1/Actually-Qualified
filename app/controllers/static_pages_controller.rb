@@ -5,6 +5,9 @@ class StaticPagesController < ApplicationController
   def mission
   end
 
+  def resume
+  end
+
   def about
   end
 
