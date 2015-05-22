@@ -17,17 +17,19 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
 
-
-  host = ENV["SERVER_NAME"]
-
-  host = ENV["SERVER_NAME"] if Rails.env.development?
-
-  host = 'localhost:3000' if Rails.env.test?
-
-  host = ENV["SERVER_NAME"] if Rails.env.production?
+  # config.action_mailer.default_url_options = {host: 'example.com'}
 
 
-  config.action_mailer.default_url_options = {host: request.env.ENV["SERVER_NAME"]}
+  #  host = 'localhost:3000'
+
+  #  host = ENV["SERVER_NAME"] if Rails.env.development?
+
+  #  host = 'localhost:3000' if Rails.env.test?
+
+  #  host = ENV["SERVER_NAME"] if Rails.env.production?
+
+  config.action_mailer.default_url_options = {host: 'actually-qualified.com'}
+
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

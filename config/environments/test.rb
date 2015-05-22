@@ -31,17 +31,19 @@ Rails.application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = {host: 'example.com'}
+
+  # config.action_mailer.default_url_options = {host: 'example.com'}
 
 
-  host = 'localhost:3000'
+#  host = 'localhost:3000'
 
-  host = ENV["SERVER_NAME"] if Rails.env.development?
+#  host = ENV["SERVER_NAME"] if Rails.env.development?
 
-  host = 'localhost:3000' if Rails.env.test?
+#  host = 'localhost:3000' if Rails.env.test?
 
-  host = ENV["SERVER_NAME"] if Rails.env.production?
+#  host = ENV["SERVER_NAME"] if Rails.env.production?
 
+  config.action_mailer.default_url_options = {host: 'actually-qualified.com'}
 
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
