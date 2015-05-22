@@ -45,7 +45,8 @@ Rails.application.configure do
   end
 
   if Rails.env.production?
-    host = Figaro.env.AWS_domain_name
+  # host = Figaro.env.AWS_domain_name
+    host = Figaro.env.actually_qualified
   end
 
 
