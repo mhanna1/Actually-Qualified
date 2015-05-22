@@ -13,13 +13,14 @@ Rails.application.routes.draw do
   get    'contact' => 'static_pages#contact'
   get    'signup'  => 'users#new'
   get    'edit'    => 'edit#new'
+  get    'four_oh_four' => 'static_pages#home'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
-  map.connect '*path', :controller => 'redirect', :action => 'static_pages#home'
+
 end
 
   #

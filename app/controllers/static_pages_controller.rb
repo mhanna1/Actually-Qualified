@@ -18,5 +18,8 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def four_oh_four
+  end
+
 
 end
