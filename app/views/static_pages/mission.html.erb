@@ -1,33 +1,41 @@
 <% provide(:title, 'Employer Introduction Site - Mission') %>
 
 <div class="jumbotron" style="background:#5C81AB !important">
-  <BR>
 
   <h3 align="center" style="color:#000000">Site Mission Statement</h3>
 
-  <p align="justify">The purpose of this site is to demonstrate my proficiency in both Ruby, Ruby on Rails and
-    cloud administration. In this case the cloud is Amazon Web Services.</p>
+  <p align="justify">The purpose of this site is to demonstrate my proficiency with Ruby on Rails
+    and cloud administration. In this case the cloud is Amazon Web Services.</p>
 
-  <p align="justify">The main reason for employers to login is to demonstrate both
-    web site access control, user authentication and email address verification,
-    in combination with the mySQL database storage of users.</p>
+  <h4>Web Site Features</h4>
+  <ul>
+    <li>The site has been designed with a user database.</li>
+    <li>The main reason for employers to login is to demonstrate the user login features.</li>
+    <li>The web site has the ability for new users to create an account.</li>
+    <li>The new user is sent an email to verify that they have access to the email address.</li>
+    <li>The email has a user account activation link.</li>
+    <li>The new user is authenticated only after they click on the link contained in the email.</li>
+    <li>The web site has page by page access control, some pages like te home page can be viewed by anyone,
+      where as only logged in users wll be able to view the link to my resume page.</li>
+    <li>The user information is stored a mySQL database.</li>
+  </ul>
 
-  <p align="justify">Used in this application were, Ruby, Ruby on Rails with a remote cloud hosted
+  <p align="justify">Technologies used in building this application were, Ruby, Ruby on Rails with a remote cloud hosted
     mySQL database implementation using RDS on AWS. This means your development system and your
-    production system can be hosted in a common cloud location.</p>
+    production system databases can be served from a common cloud location.</p>
 
-  <p align="justify">The gems used in this application are aws-sdk, aws-ses, bcrypt, bootstrap-sass,
+  <p align="justify">The gems used in this Ruby on Rails application are ... aws-sdk, aws-ses, bcrypt, bootstrap-sass,
     bootstrap-will_paginate, coffee-rails, faker, figaro, guard-minitest, jbuilder, jquery-rails,
     json, mini_backtrace, minitest-reporters, mysql3, rails,
     rspec, sass-rails, sdoc, spring, turbolinks, uglifier, web-consol, and will_paginate</p>
 
-  <p align="justify">The app is hosted on a Ubuntu EC2 instance. The native AWS instance domain name is
+  <p align="justify">This web site is hosted on a Ubuntu EC2 instance. The native AWS instance domain name is
     <a href="http://ec2-52-7-56-224.compute-1.amazonaws.com/mission" style="color:#000000"><u>http://ec2-52-7-56-224.compute-1.amazonaws.com</u></a>.
-    The <a href="http://actually-qualified.com/mission" style="color:#000000"><u>http://actually-qualified.com</u></a> domain name is routed
+    The <a href="http://actually-qualified.com/mission" style="color:#000000"><u>http://actually-qualified.com</u></a>
+    domain name is routed
     using AWS "Route 53" service. Being able to click on a link whose top level domain is amazonaws.com proves
     that the site is hosted on the Amazon AWS cloud service.
   </p>
-
 
 
 </div>
