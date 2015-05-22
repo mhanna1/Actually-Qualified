@@ -36,19 +36,11 @@ Rails.application.configure do
 
   host = 'localhost:3000'
 
-  if Rails.env.development?
-#   host = 'localhost:3000'
-    host = ENV["SERVER_NAME"]
-  end
+  host = ENV["SERVER_NAME"] if Rails.env.development?
 
-  if Rails.env.test?
-    host = 'localhost:3000'
-  end
+  host = 'localhost:3000' if Rails.env.test?
 
-  if Rails.env.production?
-   # host = Figaro.env.AWS_domain_name
-    host = ENV["SERVER_NAME"]
-  end
+  host = ENV["SERVER_NAME"] if Rails.env.production?
 
 
   # Randomize the order test cases are executed.

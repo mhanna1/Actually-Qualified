@@ -18,13 +18,13 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
 
 
-  host = 'localhost:3000'
+  host = ENV["SERVER_NAME"]
 
-  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified if Rails.env.development?
+  host = ENV["SERVER_NAME"] if Rails.env.development?
 
   host = 'localhost:3000' if Rails.env.test?
 
-  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified if Rails.env.production?
+  host = ENV["SERVER_NAME"] if Rails.env.production?
 
 
   config.action_mailer.default_url_options = {host: host}
