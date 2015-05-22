@@ -21,7 +21,8 @@ Rails.application.routes.draw do
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
 
-  match '*', to: "static_pages#home", via: :all
+  match '/*', to: 'static_pages#home' , 'get'
+
 end
 
   #
