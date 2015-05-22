@@ -23,7 +23,7 @@ Rails.application.configure do
   if Rails.env.development?
 #   host = 'localhost:3000'
 # \   host = Figaro.env.actually_qualified
-    host = Figaro.env.SERVER_NAME
+    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
   end
 
   if Rails.env.test?
@@ -31,9 +31,9 @@ Rails.application.configure do
   end
 
   if Rails.env.production?
-  # host = Figaro.env.AWS_domain_name
-    host = Figaro.env.SERVER_NAME
-  # host = Figaro.env.actually_qualified
+    # host = Figaro.env.AWS_domain_name
+    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
+    # host = Figaro.env.actually_qualified
   end
 
 

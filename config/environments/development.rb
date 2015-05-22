@@ -18,22 +18,23 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
 
   # host = 'localhost:3000'
-  host = Figaro.env.actually_qualified
+  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
 
   if Rails.env.development?
    # host = 'localhost:3000'
-    host = Figaro.env.actually_qualified
+    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
+
     # host = Figaro.env.AWS_domain_name
   end
 
   if Rails.env.test?
   #  host = 'localhost:3000'
-    host = Figaro.env.actually_qualified
+    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
   #  host = Figaro.env.AWS_domain_name
   end
 
   if Rails.env.production?
-    host = Figaro.env.actually_qualified
+    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
     #  host = Figaro.env.AWS_domain_name
   end
 
