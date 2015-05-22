@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
 
+  #This is a catchall for 404's
   match '*_path' , to: 'static_pages#home' , :via => 'get'
 
 end
