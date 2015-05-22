@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
 
   def resume
     user = User.find_by(email: params[:email])
-    if user && !user.activated? && user.authenticated?(:activation, params[:id])
+    if user && logged_in?
       render 'resume'
     else
       flash[:info] = "Please login to view the resume page"
