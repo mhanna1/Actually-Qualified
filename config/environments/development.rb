@@ -17,26 +17,14 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
 
-  # host = 'localhost:3000'
-  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
 
-  if Rails.env.development?
-   # host = 'localhost:3000'
-    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
+  host = 'localhost:3000'
 
-    # host = Figaro.env.AWS_domain_name
-  end
+  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified if Rails.env.development?
 
-  if Rails.env.test?
-  #  host = 'localhost:3000'
-    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
-  #  host = Figaro.env.AWS_domain_name
-  end
+  host = 'localhost:3000' if Rails.env.test?
 
-  if Rails.env.production?
-    host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified
-    #  host = Figaro.env.AWS_domain_name
-  end
+  host = ENV["SERVER_NAME"] | Figaro.env.actually_qualified if Rails.env.production?
 
 
   config.action_mailer.default_url_options = {host: host}
