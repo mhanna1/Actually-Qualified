@@ -27,7 +27,7 @@ Rails.application.configure do
   host = ENV["SERVER_NAME"] if Rails.env.production?
 
 
-  config.action_mailer.default_url_options = {host: host}
+  config.action_mailer.default_url_options = {host: request.env.ENV["SERVER_NAME"]}
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
