@@ -1,9 +1,9 @@
 
 <h1>Employee Introduction Site</h1>
 
-<p>Hi <%= @user.name.titleize %>,</p>
+<p2>Hi <%= @user.name.titleize %>,</p2>
 
-<p>
+<p2 style="align=justified">
   My name is Mark Hanna.<br>
   I set up this web site to demonstrate my proficiency with several technologies.<BR>
   I hosted this site in the cloud on AWS.<BR>
@@ -11,7 +11,7 @@
   Please take the tour by clicking on the links in the upper right hand corner.
 
   Click on the link below to activate your account:
-</p>
+</p2>
 <br>
 <%= link_to "Activate", edit_account_activation_url(@user.activation_token,
                                                     email: @user.email) %>
