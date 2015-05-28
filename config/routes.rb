@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'mission' => 'static_pages#mission'
   get 'simular' => 'static_pages#simular'
   get 'languages' => 'static_pages#languages'
+  get 'fsd' => 'static_pages#fsd'
   get 'code' => 'static_pages#code'
   get 'aws' => 'static_pages#aws'
   get 'about' => 'static_pages#about'

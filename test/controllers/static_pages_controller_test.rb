@@ -28,6 +28,13 @@ class StaticPagesControllerTest < ActionController::TestCase
   end
 
 
+  test "should get fsd" do
+    get :fsd
+    assert_response :success
+#   assert_select "title", "Employer Introduction Site - Full Stack Developer"
+  end
+
+
   test "should get aws" do
     get :aws
     assert_response :success

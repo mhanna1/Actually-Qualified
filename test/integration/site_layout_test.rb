@@ -10,6 +10,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
 #   assert_select "a[href=?]", code_path
 #   assert_select "a[href=?]", languages_path
 #   assert_select "a[href=?]", simular_path
+#   assert_select "a[href=?]", fsd_path
     assert_select "a[href=?]", aws_path
 #   assert_select "a[href=?]", resume_path
 #   assert_select "a[href=?]", about_path

@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def languages
   end
 
+  def fsd
+  end
+
   def code
   end
 
