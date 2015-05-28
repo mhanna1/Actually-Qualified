@@ -21,6 +21,12 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Employer Introduction Site - Mission"
   end
 
+  test "should get code" do
+    get :code
+    assert_response :success
+#   assert_select "title", "Employer Introduction Site - Use The Right Tool for the Job"
+  end
+
 
   test "should get aws" do
     get :aws

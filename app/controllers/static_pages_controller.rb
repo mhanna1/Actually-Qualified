@@ -5,6 +5,22 @@ class StaticPagesController < ApplicationController
   def mission
   end
 
+  def simular
+  end
+
+  def languages
+  end
+
+  def code
+  end
+
+  #  unless logged_in?
+  #    flash[:info] = "Please login to view the code page"
+  #    redirect_to login_url
+  #  end
+  # end
+
+
   def resume
     unless logged_in?
       flash[:info] = "Please login to view the resume page"
