@@ -41,10 +41,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Employer Introduction Site - AWS"
   end
 
-  # if not logged in it should fail
-  test "should not get resume" do
+  # it should get the resume
+  test "should get resume" do
     get :resume
-    assert_response :redirect
+    assert_response :success
 #   assert_select "title", "Employer Introduction Site - Resume"
   end
 
