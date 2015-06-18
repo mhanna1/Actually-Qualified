@@ -41,6 +41,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Employer Introduction Site - AWS"
   end
 
+
   # it should get the resume
   test "should get resume" do
     get :resume
