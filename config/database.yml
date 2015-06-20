@@ -2,34 +2,35 @@ default: &default
   adapter: mysql2
   encoding: utf8
   database: default
-  username: <%= Figaro.env.awsrds_username %>
-  password: <%= Figaro.env.awsrds_password %>
-  host: <%= Figaro.env.awsrds_host %>
-  port: <%= Figaro.env.awsrds_port %>
+  username: markrds01
+  password: dbpass01
+  host: marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com
+  port: 3306
 
 development:
   adapter: mysql2
   encoding: utf8
   database: development
-  username: <%= Figaro.env.awsrds_username %>
-  password: <%= Figaro.env.awsrds_password %>
-  host: <%= Figaro.env.awsrds_host %>
-  port: <%= Figaro.env.awsrds_port %>
+  username: markrds01
+  password: dbpass01
+  host: marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com
+  port: 3306
 
 test:
   adapter: mysql2
   encoding: utf8
   database: test
-  username: <%= Figaro.env.awsrds_username %>
-  password: <%= Figaro.env.awsrds_password %>
-  host: <%= Figaro.env.awsrds_host %>
-  port: <%= Figaro.env.awsrds_port %>
+  username: markrds01
+  password: dbpass01
+  host: marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com
+  port: 3306
+
 
 production:
   adapter: mysql2
   encoding: utf8
   database: production
-  username: <%= Figaro.env.awsrds_username %>
-  password: <%= Figaro.env.awsrds_password %>
-  host: <%= Figaro.env.awsrds_host %>
-  port: <%= Figaro.env.awsrds_port %>
+  username: markrds01
+  password: dbpass01
+  host: marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com
+  port: 3306

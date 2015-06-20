@@ -1,0 +1,35 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  database: default
+  username: <%= Figaro.env.awsrds_username %>
+  password: <%= Figaro.env.awsrds_password %>
+  host: <%= Figaro.env.awsrds_host %>
+  port: <%= Figaro.env.awsrds_port %>
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: development
+  username: <%= Figaro.env.awsrds_username %>
+  password: <%= Figaro.env.awsrds_password %>
+  host: <%= Figaro.env.awsrds_host %>
+  port: <%= Figaro.env.awsrds_port %>
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: test
+  username: <%= Figaro.env.awsrds_username %>
+  password: <%= Figaro.env.awsrds_password %>
+  host: <%= Figaro.env.awsrds_host %>
+  port: <%= Figaro.env.awsrds_port %>
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: production
+  username: <%= Figaro.env.awsrds_username %>
+  password: <%= Figaro.env.awsrds_password %>
+  host: <%= Figaro.env.awsrds_host %>
+  port: <%= Figaro.env.awsrds_port %>
