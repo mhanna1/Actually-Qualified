@@ -30,9 +30,8 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
+
 # Ignore application configuration this houses secret stuff not for public distribution
 /config/application.yml
-
-
-
-config/database.yml
+# ningx server / passenger reads database.yml on start-up so Figaro will not work
+/config/database.yml
