@@ -41,9 +41,13 @@ Google Analytics is a freemium web analytics service offered by Google that trac
 
 * Configuration
 
-    In the directory ~/actually-qualified/Actually-Qualified-master/config  there will be a file called RENAME_THIS_AS_application.yml
+    In the directory ~/actually-qualified/Actually-Qualified-master/config  there will be a file named RENAME_THIS_AS_application.yml
+
+    In the directory ~/actually-qualified/Actually-Qualified-master/config  there will be a file named RENAME_THIS_AS_database.yml
 
     This file needs to be renamed application.yml  ...  contained in this file are parameters hich have accounts locations email accounts passwords and more. These will need to be customized for your application.
+
+    Depending on the application Figaro may work for values in database.yml however some servers may need to know these envs before the rails app initializes.
 
 * Dependencies
 
