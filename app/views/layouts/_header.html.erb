@@ -1,20 +1,5 @@
 <header class="navbar navbar-fixed-top navbar-inverse" style="background:#364E6A !important">
 
-  <script type="text/javascript">
-
-      function pgClock() {
-          var sTime = (new Date()).toString();
-          document.getElementById('clockid2').innerHTML =
-                  sTime.substring(0, 3 + sTime.lastIndexOf(':'));
-          setTimeout('pgClock()', 333);
-      }
-
-      window.onload = function () {
-          pgClock();
-      }
-
-  </script>
-
 
   <table align="center" width="850px">
     <tr>
@@ -22,8 +7,15 @@
         <timeclock>Time is ticking ... &nbsp;</timeclock>
       </td>
       <td align="center" style="white-space:nowrap; width:250px">
+        <!--
+        Created by mark on 5/20/15.
+        This javascript function is located in the /app/assets/javascripts/time_clock_for_header.js
+        creates a clock in the format of
+        SAT MAY 11 2015 16:00:43    counting up by seconds
+        called by div id='clockid'
+        -->
         <timeclock>
-          <div id="clockid2"></div>
+          <div id='clockid'></div>
         </timeclock>
       </td>
       <td align="left" style="white-space:nowrap; width:300px">
