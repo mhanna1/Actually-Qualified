@@ -35,13 +35,13 @@ Rails.application.configure do
   # config.action_mailer.default_url_options = {host: 'example.com'}
 
 
-#  host = 'localhost:3000'
+  #  host = 'localhost:3000'
 
-#  host = ENV["SERVER_NAME"] if Rails.env.development?
+  #  host = ENV["SERVER_NAME"] if Rails.env.development?
 
-#  host = 'localhost:3000' if Rails.env.test?
+  #  host = 'localhost:3000' if Rails.env.test?
 
-#  host = ENV["SERVER_NAME"] if Rails.env.production?
+  #  host = ENV["SERVER_NAME"] if Rails.env.production?
 
   config.action_mailer.default_url_options = {host: 'actually-qualified.com'}
 

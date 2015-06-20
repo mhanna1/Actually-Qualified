@@ -9,7 +9,6 @@ $purplish: #FD34F6;
 $bluegrey: #9395C7;
 $body-bg: #9FAFEE;
 
-
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
@@ -19,9 +18,9 @@ body {
 }
 
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 
 /* miscellaneous */
@@ -33,7 +32,6 @@ body {
   margin-top: 45px;
   @include box_sizing;
 }
-
 
 /* universal */
 
@@ -56,7 +54,6 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
-
 
 /* typography */
 
@@ -81,18 +78,16 @@ h2 {
 }
 
 p2 {
-   font-size: 14pt;
-   font-family: "Times New Roman", Times, sans-serif;
-   line-height: 20pt;
+  font-size: 14pt;
+  font-family: "Times New Roman", Times, sans-serif;
+  line-height: 20pt;
 }
-
 
 p {
   font-size: 12pt;
   font-family: "Times New Roman", Times, sans-serif;
   line-height: 20pt;
 }
-
 
 timeclock {
   margin-right: 0px;
@@ -103,8 +98,6 @@ timeclock {
   padding-top: 0px;
   font-weight: bold;
 }
-
-
 
 /* header */
 
@@ -119,13 +112,10 @@ timeclock {
   font-weight: bold;
 }
 
-
 #logo:hover {
   color: #fff;
   text-decoration: none;
 }
-
-
 
 #pagelink {
   float: left;
@@ -137,11 +127,9 @@ timeclock {
   font-weight: bold;
 }
 
-
 #pagelink:hover {
   color: #fff;
 }
-
 
 #pagelink1 {
   float: left;
@@ -154,12 +142,10 @@ timeclock {
   text-decoration: underline;
 }
 
-
 #pagelink1:hover {
   color: #0000FF;
   text-decoration: underline;
 }
-
 
 #pagelink2 {
   float: left;
@@ -172,17 +158,10 @@ timeclock {
   text-decoration: underline;
 }
 
-
 #pagelink2:hover {
   color: #0000FF;
   text-decoration: underline;
 }
-
-
-
-
-
-
 
 /* footer */
 
@@ -209,8 +188,8 @@ footer ul {
   float: right;
   list-style: none;
   li {
-  float: left;
-  margin-left: 15px;
+    float: left;
+    margin-left: 15px;
   }
 }
 
@@ -250,7 +229,6 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
-
 
 /* forms */
 

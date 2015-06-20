@@ -1,0 +1,51 @@
+# Add configuration values here, as shown below.
+#
+# This code is meant for public download
+# You must rename this file to   ./config/application.yml
+# This secret codes need to be replaced with some workable values
+# The  ./config/application.yml file is processed by the Figaro gem
+# You don ot want the real file as part of your public distribution
+# so I included ./config/RENAME_THIS_AS_application.yml
+
+
+development:
+actually_qualified: Actually-Qualified.com
+AWS_domain_name: ec2-52-7-56-224.compute-1.amazonaws.com
+gmail_from: 'Mark Hanna <mhanna500@gmail.com>'
+gmail_username: mhanna500@gmail.com
+gmail_password: A_email_password_here
+gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
+secret_key_base: A_database_key_here
+
+
+
+production:
+actually_qualified: Actually-Qualified.com
+AWS_domain_name: ec2-52-7-56-224.compute-1.amazonaws.com
+gmail_from: 'Mark Hanna <mhanna500@gmail.com>'
+gmail_username: mhanna500@gmail.com
+gmail_password: A_email_password_here
+gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
+secret_key_base: A_database_key_here
+
+
+
+ses_access_key_id: AjbKI,bkjnlkmAJEQ,jkhkbm,nb JFIIkjkvccjkll2LkjkjPD6BJLA,
+ses_secret_access_key: AtCXBHbkiDxgwpV6chjvjhvkjlklkncxxtty543uyk,ip9kuIez7PdSbsn6bkQr4Fl6SKJP+xD
+ses_server: email-smtp.us-east-1.amazonaws.com
+ses_iam_username: ses-smtp-user.2010876479522511
+ses_domain: ec2-52-7-56-224.compute-1.amazonaws.com
+secret_key_base: A_database_key_here
+
+
+
+test:
+actually_qualified: Actually-Qualified.com
+gmail_from: 'Mark Hanna <mhanna500@gmail.com>'
+gmail_username: mhanna500@gmail.com
+gmail_password: A_email_password_here
+gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
+secret_key_base: A_database_key_here
+
+
+
