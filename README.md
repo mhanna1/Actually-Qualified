@@ -43,7 +43,7 @@ Google Analytics is a freemium web analytics service offered by Google that trac
 
     In the directory ~/actually-qualified/Actually-Qualified-master/config  there will be a file called RENAME_THIS_AS_application.yml
 
-    This file needs to be renamed application.yml  ...  contained in this file are parameters hich have accounts locations email accounts passwords and more. These will need to be customized for your application.
+    This file needs to be renamed application.yml  ...  contained in this file are parameters which have accounts locations email accounts passwords and more. These will need to be customized for your application.
 
 * Dependencies
 
