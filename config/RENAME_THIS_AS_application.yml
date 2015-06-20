@@ -16,7 +16,11 @@ gmail_username: mhanna500@gmail.com
 gmail_password: A_email_password_here
 gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
 secret_key_base: A_database_key_here
-
+database_adapter: database_adapter i.e.   mysql2
+awsrds_username: database_username
+awsrds_password: database_username
+awsrds_host: database_host_url
+awsrds_port: database_host_post
 
 
 production:
@@ -27,7 +31,11 @@ gmail_username: mhanna500@gmail.com
 gmail_password: A_email_password_here
 gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
 secret_key_base: A_database_key_here
-
+database_adapter: database_adapter i.e.   mysql2
+awsrds_username: database_username
+awsrds_password: database_username
+awsrds_host: database_host_url
+awsrds_port: database_host_post
 
 
 ses_access_key_id: AjbKI,bkjnlkmAJEQ,jkhkbm,nb JFIIkjkvccjkll2LkjkjPD6BJLA,
@@ -38,7 +46,6 @@ ses_domain: ec2-52-7-56-224.compute-1.amazonaws.com
 secret_key_base: A_database_key_here
 
 
-
 test:
 actually_qualified: Actually-Qualified.com
 gmail_from: 'Mark Hanna <mhanna500@gmail.com>'
@@ -46,6 +53,10 @@ gmail_username: mhanna500@gmail.com
 gmail_password: A_email_password_here
 gmail_domain: ec2-52-7-56-224.compute-1.amazonaws.com
 secret_key_base: A_database_key_here
-
+database_adapter: database_adapter i.e.   mysql2
+awsrds_username: database_username
+awsrds_password: database_username
+awsrds_host: database_host_url
+awsrds_port: database_host_post
 
 

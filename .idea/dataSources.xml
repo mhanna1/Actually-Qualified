@@ -5,7 +5,7 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com:3306/default</jdbc-url>
+      <jdbc-url>jdbc:mysql://&lt;%= Figaro.env.awsrds_host %&gt;:&lt;%= Figaro.env.awsrds_port %&gt;/default</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -26,7 +26,7 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com:3306/development</jdbc-url>
+      <jdbc-url>jdbc:mysql://&lt;%= Figaro.env.awsrds_host %&gt;:&lt;%= Figaro.env.awsrds_port %&gt;/development</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -47,7 +47,7 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com:3306/test</jdbc-url>
+      <jdbc-url>jdbc:mysql://&lt;%= Figaro.env.awsrds_host %&gt;:&lt;%= Figaro.env.awsrds_port %&gt;/test</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -68,7 +68,7 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://marks-rds-mysql.clbd4orl1iyi.us-east-1.rds.amazonaws.com:3306/production</jdbc-url>
+      <jdbc-url>jdbc:mysql://&lt;%= Figaro.env.awsrds_host %&gt;:&lt;%= Figaro.env.awsrds_port %&gt;/production</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
