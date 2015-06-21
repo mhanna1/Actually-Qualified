@@ -24,7 +24,9 @@
 #stuff for eb
 /.elasticbeanstalk
 
-
+# all systems can be different ... although the devel system was backed up to 1.9.3-p551 for some capability issues
+/.ruby-version
+/.bundle
 
 # Elastic Beanstalk Files
 !.elasticbeanstalk/*.cfg.yml
