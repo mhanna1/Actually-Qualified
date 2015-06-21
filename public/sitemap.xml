@@ -60,4 +60,9 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>http://Actually-Qualified.com/sitemap.xml</loc>
+    <priority>0.3</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
