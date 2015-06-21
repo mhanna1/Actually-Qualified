@@ -36,4 +36,4 @@
 # Ignore application configuration this houses secret stuff not for public distribution
 /config/application.yml
 # ningx server / passenger reads database.yml on start-up so Figaro will not work
-/config/database.yml
+/config/database.yml.zeus.sock
