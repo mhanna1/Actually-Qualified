@@ -6,9 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb83c22-23c5-45ff-8ac4-a093dbbd8e63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml-out" afterPath="$PROJECT_DIR$/config/database.yml-out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -636,12 +634,6 @@
       <option name="number" value="Default" />
       <updated>1431808063811</updated>
     </task>
-    <task id="LOCAL-00219" summary="working on help page to mission">
-      <created>1432334305904</created>
-      <option name="number" value="00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1432334305904</updated>
-    </task>
     <task id="LOCAL-00220" summary="working on help page to mission">
       <created>1432334498211</created>
       <option name="number" value="00220" />
@@ -930,7 +922,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434848871354</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="Modified Asset Pipeline &#10;">
+      <created>1434848992797</created>
+      <option name="number" value="00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1434848992797</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TodoView">
