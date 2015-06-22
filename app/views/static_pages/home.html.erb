@@ -1,16 +1,19 @@
 <% provide(:title, 'Employer Introduction Site - Home') %>
 
-<div class="center jumbotron" style="background:#5C81AB !important">
+<div class="jumbotron" style="background:#FFFFE0 !important">
 
-  <h1>Employer Introduction Website</h1>
+  <h1 style="align-content: center">Employer Introduction Website</h1>
 
-  <h3>hosted on</h3>
+  <h2 style="align-content: center">hosted on</h2>
 
-  <h1>Amazon Web Services</h1>
+  <h1 style="align-content: center">Amazon Web Services</h1>
 
-  <br>
-  Hi, I am Mark Hanna and I am looking for an exciting employment opportunity.<br>
-  <br>
+  <div style="text-align: center">
+  <p>Welcome, Mark Hanna is actively searching for an exciting employment opportunity.</p>
+  <p>Please explore the links above to learn more.</p>
+  <p>Registering is quick, easy and demonstrates additional features. <br></p>
 
-  <%= link_to 'Employers Please Register!', signup_path, class: 'btn btn-lg btn-primary' %>
+
+    <%= link_to 'Employers Please Register!', signup_path, class: 'btn btn-lg btn-primary'  %>
+  </div>
 </div>

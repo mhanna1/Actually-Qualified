@@ -30,19 +30,26 @@
     <ul class="nav navbar-nav navbar-right">
 
       <% if logged_in? %>
-          <li><%= link_to 'Home', root_path, id: 'pagelink' %></li>
-          <li><%= link_to 'Mission', mission_path, id: 'pagelink' %></li>
-          <li><%= link_to 'AWS', aws_path, id: 'pagelink' %></li>
-          <li><%= link_to 'Contact', contact_path, id: 'pagelink' %></li>
+          <li><%= link_to 'Home', root_path, id: 'pagelink' unless current_page?(:action => 'home', :controller => 'static_pages') %></li>
+          <li><%= link_to 'Mission', mission_path, id: 'pagelink' unless current_page?(:action => 'mission', :controller => 'static_pages') %></li>
+          <li><%= link_to 'Contact', contact_path, id: 'pagelink' unless current_page?(:action => 'contact', :controller => 'static_pages') %></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="pagelink" data-toggle="dropdown">AWS Info<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'Amazon Web Services', aws_path %></li>
+              <li><a href="https://www.google.com/#tbm=nws&q=Amazon+Web+Services" target="_blank">Latest AWS News</a></li>
+            </ul>
+          </li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" id="pagelink" data-toggle="dropdown">Resume / Info<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <%= link_to 'Resume', resume_path %>
+                <%= link_to 'Resume', resume_path unless current_page?(:action => 'resume', :controller => 'static_pages') %>
               </li>
               <li>
-                <%= link_to 'Full Stack Developer', fsd_path %>
+                <%= link_to 'Full Stack Developer', fsd_path unless current_page?(:action => 'fsd', :controller => 'static_pages')  %>
               </li>
             </ul>
           </li>
@@ -51,14 +58,14 @@
             <a href="#" class="dropdown-toggle" id="pagelink" data-toggle="dropdown">Use the Right Tools<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <%= link_to 'Codes', code_path %>
+                <%= link_to 'Codes', code_path unless current_page?(:action => 'code', :controller => 'static_pages')  %>
               </li>
               <li>
-                <%= link_to 'Simular Looks', simular_path %>
+                <%= link_to 'Simular Looks', simular_path unless current_page?(:action => 'simular', :controller => 'static_pages')  %>
               </li>
               <li class="divider"></li>
               <li>
-                <%= link_to 'Use the Right Tools', languages_path %>
+                <%= link_to 'Use the Right Tools', languages_path  unless current_page?(:action => 'languages', :controller => 'static_pages')  %>
               </li>
               <li>
                 <%= link_to 'Download Source | Git Repository', 'https://github.com/mhanna1/Actually-Qualified' , target: '_blank' %>
@@ -80,19 +87,34 @@
             </ul>
           </li>
       <% else %>
-          <li><%= link_to 'Home', root_path, id: 'pagelink' %></li>
-          <li><%= link_to 'Mission', mission_path, id: 'pagelink' %></li>
-          <li><%= link_to 'AWS', aws_path, id: 'pagelink' %></li>
-          <li><%= link_to 'Contact', contact_path, id: 'pagelink' %></li>
+          <li>
+            <%= link_to 'Home', root_path, id: 'pagelink' unless current_page?(:action => 'home', :controller => 'static_pages') %>
+          </li>
+          <li>
+            <%= link_to 'Mission', mission_path, id: 'pagelink' unless current_page?(:action => 'mission', :controller => 'static_pages') %>
+          </li>
+          <li>
+            <%= link_to 'Contact', contact_path, id: 'pagelink' unless current_page?(:action => 'contact', :controller => 'static_pages') %>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="pagelink" data-toggle="dropdown">AWS Info<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'Amazon Web Services', aws_path %></li>
+              <li><a href="https://www.google.com/#tbm=nws&q=Amazon+Web+Services" target="_blank">Latest AWS News</a></li>
+            </ul>
+          </li>
+
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" id="pagelink" data-toggle="dropdown">Resume / Info<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <%= link_to 'Resume', resume_path %>
+                <%= link_to 'Resume', resume_path unless current_page?(:action => 'resume', :controller => 'static_pages')  %>
               </li>
               <li>
-                <%= link_to 'Full Stack Developer', fsd_path %>
+                <%= link_to 'Full Stack Developer', fsd_path unless current_page?(:action => 'fsd', :controller => 'static_pages')  %>
               </li>
             </ul>
           </li>
@@ -103,10 +125,5 @@
   </nav>
 
   <br>
-
-
-
-
-
 
 </header>

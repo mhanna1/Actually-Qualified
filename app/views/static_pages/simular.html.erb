@@ -1,6 +1,6 @@
 <% provide(:title, 'Employer Introduction Site - Use The Right Tool for the Job') %>
 
-<div class="jumbotron" style="background:#5C81AB !important">
+<div class="jumbotron" style="background:#FFFFE0 !important">
 
 
   <h1>Experience takes time to Acquire</h1>
@@ -105,19 +105,23 @@ class Testarray1{
 
   <H1>Programming Language: Ruby<br>Is it the Right Tool?</H1>
 
-  <p align=justify>The syntax of Ruby is broadly similar to that of Perl and Python.
+  <p align=justify>The syntax of Ruby is written in C. The creator blended parts of his
+    favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new
+    language that balanced functional programming with imperative programming.
     Class and method definitions are signaled by keywords. In contrast to Perl,
     variables are not obligatorily prefixed with a sigil. When used,
     the sigil changes the semantics of scope of the variable.
     RUBY is another example of loosely typed language, however in
     RUBY everything is an object. RUBY is flexible in
-    RUBY can use an array literal. In programming, a "literal" is a type of variable that's
+    RUBY you can use an array literal.
+    In programming, a "literal" is a type of variable that's
     built into the language itself and has special syntax to create it.
     For example, 3 is a numeric literal and "Ruby" is a string literal.
     An array literal is a list of variables enclosed in square brackets
     and separated by commas, like [ 1, 2, 3 ]. Note that any type of
     variables can be stored in an array,
     including variables of different types in the same array.
+   </p>
 
 <pre>
 # Comments in RUBY also follow the # character
@@ -310,11 +314,9 @@ for i in range(len(my_name_array)):
 
   <br><br><br>
 
-  <h1><%= link_to 'Programming Language Differences Click Here', languages_path, id: 'pagelink1' %></h1>
+  <h1><%= link_to 'Programming Language Differences Click Here', languages_path  %></h1>
 
   <br><br><br><br><br><br><br><br>
 
-  <% if logged_in? %>
-   < href="https://github.com/mhanna1/Actually-Qualified">Download the Git Repository for this site's source code</a>
-  <% end %>
+
 </div>

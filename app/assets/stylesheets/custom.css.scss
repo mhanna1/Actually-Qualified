@@ -69,12 +69,20 @@ h1 {
 }
 
 h2 {
+  font-size: 2.5em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+
+h3 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-medium-light;
 }
 
 p2 {
@@ -83,10 +91,35 @@ p2 {
   line-height: 20pt;
 }
 
+
+p3 {
+  font-size: 14pt;
+  font-family: "Times New Roman", Times, sans-serif;
+  line-height: 20pt;
+  margin-bottom: 60px;
+}
+
+
+mixedupletters {
+  font-size: 16pt;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, sans-serif;
+  line-height: 20pt;
+  margin-bottom: 60px;
+}
+
 p {
   font-size: 12pt;
   font-family: "Times New Roman", Times, sans-serif;
   line-height: 20pt;
+}
+
+
+#pcenter {
+  font-size: 12pt;
+  font-family: "Times New Roman", Times, sans-serif;
+  line-height: 20pt;
+  text-align: center;
 }
 
 timeclock {
@@ -285,3 +318,18 @@ input {
 }
 
 
+
+.myTable {
+  background-color: #FFFFE0;
+  border-collapse: collapse;
+}
+
+.myTable th {
+  background-color: #BDB76B;
+  color: white;
+}
+
+.myTable td, .myTable th {
+  padding: 5px; /*noinspection CssRedundantUnit*/
+  border: 0 solid #BDB76B;
+}

@@ -1,24 +1,25 @@
 <% provide(:title, @user.name.titleize) %>
 
-<div class="jumbotron" style="background:#5C81AB !important">
+<div class="jumbotron" style="background:#FFFFE0 !important">
 
-  <table align="center" style="width: 800px">
+  <table align="center" style="width: 90%">
     <tr>
       <td>
 
-        <br><br><br>
-        <p2 align="justify">
+        <p>
           Welcome <%= @user.name.titleize %>
-          <br><br><br>
+        </p>
+
+        <p>
           As I mentioned in the email, I set up this web site to demonstrate my proficiency with several
-          technologies.<BR>
-        </p2>
+          technologies.
+        </p>
 
+        <p>
+          This site is hosted in the AWS cloud.
+        </p>
 
-        <p2 align="justify">
-
-          This site is hosted in the AWS cloud.<BR>
-
+        <p>
           The site includes a basic Users resource using standard REST actions,
           together with a flexible authentication and authorization system.
           The site also employs two closely related features: account activation
@@ -27,15 +28,19 @@
           sends email in Rails. Finally, the two features complement each other
           nicely password resets involve sending a reset link to a user’s
           email address, the validity of which is confirmed by the initial account activation.
+        </p>
 
+        <p>
           User accounts which have not had their email validated are not activated and
-          prohibited from entry into the protected areas of the website.<br>
+          prohibited from entry into the protected areas of the website.
+        </p>
 
-          <br>
+        <p>
           Click on the links in the upper right hand corner to take a tour.
-
-        </p2>
-        <br>
+          Start by clicking Mission and work your way to the right. Now that you
+          have registered and logged in you will see that an extra drop down
+          menu "Use The Right Tools" is available.
+        </p>
 
       </td>
     </tr>
