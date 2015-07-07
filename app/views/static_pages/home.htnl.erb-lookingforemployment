@@ -9,9 +9,9 @@
   <h1 style="align-content: center">Amazon Web Services</h1>
 
   <div style="text-align: center">
-    <p>Welcome, Mark Hanna is not currently searching for employment opportunities.</p>
-    <p>Please explore the links above to learn more.</p>
-    <p>If you like what you see registering your email is quick and easy.<br></p>
+  <p>Welcome, Mark Hanna is actively searching for an exciting employment opportunity.</p>
+  <p>Please explore the links above to learn more.</p>
+  <p>Registering is quick, easy and demonstrates additional features. <br></p>
 
 
     <%= link_to 'Employers Please Register!', signup_path, class: 'btn btn-lg btn-primary'  %>
